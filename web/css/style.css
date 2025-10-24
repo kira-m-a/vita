@@ -8,66 +8,82 @@
     src: url('../fonts/inter/Inter-Regular.otf');
 }
 
-@font-face {
-    font-family: 'Jaldi_b';
-    src: url('../fonts/jaldi/Jaldi-Bold.ttf');
-}
 
-@font-face {
-    font-family: 'Jaldi_r';
-    src: url('../fonts/jaldi/Jaldi-Regular.ttf');
-}
-
-.inter_18_bold{
+.inter_18_bold {
     font-family: 'Inter_b';
     font-size: 18px;
 }
 
-.inter_24_bold{
+.inter_24_bold {
     font-family: 'Inter_b';
     font-size: 24px;
 }
-.inter_20_bold{
+
+.inter_20_bold {
     font-family: 'Inter_b';
     font-size: 20px;
 }
-.inter_15_bold{
+
+.inter_15_bold {
     font-family: 'Inter_b';
     font-size: 15px;
 }
-.inter_24_regular{
+
+.inter_24_regular {
     font-family: 'Inter_r';
     font-size: 24px;
 }
-.inter_20_regular{
+
+.inter_20_regular {
     font-family: 'Inter_r';
     font-size: 20px;
 }
-.inter_15_regular{
+
+.inter_15_regular {
     font-family: 'Inter_r';
     font-size: 15px;
 }
-.jaldi_32_regular{
-    font-family: 'Jaldi_r';
+
+.inter_32_regular {
+    font-family: 'Inter_r';
     font-size: 32px;
 }
-.jaldi_15_regular{
-    font-family: 'Jaldi_r';
-    font-size: 15px;
+
+h2 {
+    color: #00173C;
+    font-family: 'Inter_b';
+    font-size: 32px;
 }
-button{
-    color: #ffff;
+
+header {
+    display: flex;
+    flex-direction: row;
+
+    .logo {
+        width: 131px;
+        height: 47px;
+    }
+}
+
+.banner {
+    color: white;
+    background-image: url(../img/index/фонГлавная1.png);
+    background-size: 1360px;
+    background-position: center 0px;
+
+    .heading.logo2 {
+        width: 257;
+        height: 123;
+        background-position: center 110px;
+    }
+}
+
+.card {
+    color: white;
     background-color: #00173C;
-    border: none;
-    border-radius: 40px;
-    width: 150;
-    height: 38;
 }
-input{
-    border-radius: 40px;
-    border: none;
-    background-color: #ffff;
-    color: #6B7180;
-    width:300px ;
-    height: 48px;
+
+
+.banner2 {
+    background-image: url(../img/index/конецГлавное\(1\).png);
 }
