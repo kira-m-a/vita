@@ -268,7 +268,9 @@ nav a {
     height: 117px;
 }
 
-
+.action {
+    display: flex;
+}
 
 .card {
     color: white;
