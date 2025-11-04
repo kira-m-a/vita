@@ -64,12 +64,12 @@ h2 {
     font-family: 'Inter_b';
     font-size: 32px;
     justify-content: center;
+    margin: 60px 0px 60px;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     position: relative;
     top: 10px;
     flex-wrap: wrap;
@@ -86,6 +86,7 @@ button {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: left;
@@ -122,7 +123,16 @@ nav a {
     background-color: #00173C;
     border: none;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.nav-button:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 23, 60, 0.3);
+}
+
 
 .nav-button2 {
     font-family: 'Inter_r';
@@ -132,6 +142,27 @@ nav a {
     background-color: transparent;
     border: 1px solid #00173C;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button2:hover {
+    background-color: #00173c1a;
+    border: 1px solid #00173c1a;
+}
+
+.nav2 a:first-child {
+    font-family: 'Inter_r';
+    font-size: 16px;
+    color: #00173C;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav2 a:first-child:hover {
+    background-color: #00173c1a;
 }
 
 .logo {
@@ -145,7 +176,7 @@ nav a {
     display: flex;
     color: white;
     background-image: url(../img/index/фонГлавная1.png);
-    background-size: 1360px, 781px, cover;
+    background-size: 1360px, 781px;
     background-position: center 0px;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -164,17 +195,20 @@ nav a {
     justify-content: center;
     align-items: center;
     color: white;
+    width: 100%;
+    text-align: center;
 }
 
 .logo2 {
     display: flex;
-    flex-wrap: wrap;
     width: 256px;
     height: 91px;
+    margin:  0 auto;
 }
 
 .info {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
@@ -197,21 +231,21 @@ nav a {
     border-radius: 30px;
     width: 523px;
     height: 227px;
-    justify-content: end;
+    justify-content: flex-start;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
 }
 
 .text1 {
     font-family: 'Inter_b';
     font-size: 24px;
     margin: 20px 0px 0px;
-    margin-left: 20;
 }
 
 .text2 {
     font-family: 'Inter_r';
     font-size: 24px;
     margin: 0;
-    margin-left: 20;
 }
 
 .action {
@@ -288,6 +322,16 @@ nav a {
     border: none;
     align-items: flex-end;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-a:hover {
+    background-color: #003366;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 23, 60, 0.4);
 }
 
 .img-arrow {
@@ -326,7 +370,8 @@ nav a {
     font-family: 'Inter_b';
     font-size: 20px;
     color: #00173C;
-    align-items: baseline;
+    vertical-align: text-top;
+    margin: 0px 0px 3px;
 }
 
 .text-advantages2{
@@ -334,35 +379,38 @@ nav a {
     font-size: 15px;
     color: #6B7180;
     align-items: baseline;
+    vertical-align: text-top;
+}
+
+.icon1, .icon2, .icon3, .icon4{
+    display: flex;
+justify-content: flex-end;
 }
 
 .icon1 {
-    display: flex;
     width: 106px;
     height: 140px;
+    margin: 0px 0px 35px;
 }
 
 .icon2 {
-    display: flex;
     width: 151px;
     height: 160.03px;
+    margin: 0px 0px 35px;
 }
 
 .icon3 {
-    display: flex;
     width: 123px;
     height: 135px;
+    margin: 0px 0px 35px;
 }
 
 .icon4 {
-    display: flex;
     width: 71px;
     height: 117px;
+    margin: 0px 0px 35px;
 }
 
-.action {
-    display: flex;
-}
 
 
 
@@ -370,14 +418,86 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 150px;
+    margin-bottom: 60px;
+}
+
+.season-tickets-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 257px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.season-tickets-card:hover {
+    transform: translateY(-5px);
+}
+
+.season-tickets-card:hover .card {
+    box-shadow: 0 10px 20px rgba(0, 23, 60, 0.2);
 }
 
 .img-icon{
-    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
+    z-index: 1;
+}
+
+.title-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inter_b';
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.price-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inter_b';
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: 152px 0 0;
+}
+
+.discription{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter_r';
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+    width: 100%;
+    height: 72px;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.end-d{
+    font-family: 'Inter_r';
+    font-size: 15px;
+    justify-content: center;
+    color: #6B7180;
+    margin: 10px 0 0;
+    width: 100%;
 }
 
 .card {
@@ -389,16 +509,176 @@ nav a {
     width: 257px;
     height: 387px;
     border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
 }
+
+
+
+
+
+
+
+
 
 
 .banner2 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/index/конецГлавное\(1\).png);
-    background-size: 1360px, 781px, cover;
-    background-position: center 0px;
+    background-size: 1440px, 531px;
+    background-position: center;
     background-repeat: no-repeat;
     color: #00173C;
+    height: 430px;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
 }
-.logo-banner{}
 
+.logo-banner2 {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.banner2 .inter_24_bold {
+    font-family: 'Inter_b';
+    font-size: 24px;
+    margin: 0;
+    max-width: 750px;
+}
+
+.banner2 .inter_24_regular {
+    font-family: 'Inter_r';
+    font-size: 24px;
+    margin: 0;
+    max-width: 600px;
+}
+
+.banner2 .button {
+    margin-top: 20px;
+}
+
+.banner2 .button button {
+    font-family: 'Inter_r';
+    font-size: 24px;
+    color: white;
+    background-color: #00173C;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner2 .button button:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 23, 60, 0.3);
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    background-color: #00173C;
+    width: 100%;
+    max-width: 1440px;
+    color: white;
+    flex-direction: column;
+    padding: 40px 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-sections {
+    font-family: 'Inter_b';
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    font-family: 'Inter_r';
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contacts p {
+    margin: 0;
+    font-family: 'Inter_r';
+    font-size: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 20px;
+}
+
+.footer-bottom p {
+    font-family: 'Inter_b';
+    font-size: 15px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
