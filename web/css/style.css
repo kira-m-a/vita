@@ -9,6 +9,28 @@
 }
 
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+
+
 .inter_18_bold {
     font-family: 'Inter_b';
     font-size: 18px;
@@ -57,6 +79,10 @@
     margin: 0px;
 }
 
+
+
+
+
 h2 {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +92,10 @@ h2 {
     justify-content: center;
     margin: 60px 0px 60px;
 }
+
+
+
+
 
 header {
     display: flex;
@@ -78,6 +108,9 @@ header {
     padding: 10px 20px 0px 20px;
     gap: 152px;
     height: 0px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 button {
@@ -669,16 +702,270 @@ footer {
 
 
 
-
-body {
+.club-cards-container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 121px auto 60px;
+    max-width: 1400px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-main {
-    flex: 1;
+.club-card {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 20px 0px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.club-card.active {
+    background-color: #00173C;
+    color: white;
+    width: 400px;
+    height: 450px;
+}
+
+.club-card:not(.active) {
+    width: 170px;
+    height: 450px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+
+.card-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    gap: 10px;
+
+}
+
+.title-inactive {
+    color: white;
+    font-family: 'Inter_b';
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+
+.dark-blue {
+    box-sizing: border-box;
+    background-color: #5483DF;
+}
+
+.light-blue {
+    box-sizing: border-box;
+    background-color: #9AB3DA;
+}
+
+.gray {
+    box-sizing: border-box;
+    background-color: #6B7180;
+}
+
+
+
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 24px 20px 24px;
+    height: calc(100% - 60px);
+    position: relative;
+    z-index: 2;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 100px 0px 0px;
+    margin-bottom: 5px;
+}
+
+.title-active {
+    font-family: 'Inter_b';
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    text-align: left;
+}
+
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+     margin-bottom: 5px; 
+}
+
+.card-features li {
+    font-family: 'Inter_r';
+    font-size: 15px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.card-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    gap: 20px;
+}
+
+.price {
+    font-family: 'Inter_b';
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    margin-right: auto;
+}
+
+
+
+
+.select-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter_b';
+    font-size: 15px;
+}
+
+.active-btn {
+    background-color: white;
+    color: #00173C;
+    width: 350px;
+    gap: 194px;
+}
+
+.active-btn:hover {
+    transform: translateY(-2px);
+}
+
+.inactive-btn {
+    background-color: #00173C;
+    color: white;
+    gap: 25px;
+    width: 141px;
+}
+
+.inactive-btn:hover {
+    transform: translateY(-2px);
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    align-items: center;
     width: 100%;
+    height: 60px;
+}
+
+.arrow-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-icon {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+
+
+
+
+
+.about-club{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.about{
+    font-family: 'Inter_r';
+    font-size: 32px;
+    color: #6B7180;
+    margin: 30px 0;
+    text-align: left; 
+    width: 100%;
+}
+
+.about span{
+    font-family: 'Inter_b';
+    font-size: 32px;
+    color: #00173C;
+}
+
+.video-placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    height: auto;
+    margin: 0 auto 40px;
+}
+
+
+.video-placeholder img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }

@@ -9,96 +9,141 @@
 </head>
 
 <body>
-
     <header>
         <img class="logo" src="../web/img/index/Логотип.png" alt="Логотип фитнес-центра VITA">
         <nav>
-            <a href="http://127.0.0.1:5500/html/index.html">Главное</a>
-            <a href="http://127.0.0.1:5500/html/club_cards.html">Клубные карты</a>
-            <a href="http://">Направления</a>
-            <a href="http://">Тренеры</a>
-            <div>
+            <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
+            <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные карты</button></a>
+            <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
+            <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
+            <div class="nav2">
                 <a href="http://http://127.0.0.1:5500/html/auth.html">Войти</a>
-                <a href="http://">Регистрироваться</a>
+                <a href="http://"><button class="nav-button2">Регистрироваться</button></a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="season-tickets">
-            <div class="season-tickets-card">
-                <button><img src="../web/img/club_cards/активнаяСтрелка.png" alt=""></button>
-                <img src="../web/img/index/Cloud.png" alt="Иконка облако">
-
-                <ul class="inter_24_bold"> Утренний
-                    <li class="inter_15_regular">Доступ в тренажерный зал с 7:00 до 13:00</li>
-                    <li class="inter_15_regular">Посещение 3 утрених групповых занятий в неделю</li>
-                    <li class="inter_15_regular">Скидка на продукты в фитнес-баре до 13:00</li>
-                </ul>
-                <p class="inter_24_bold">2000₽/мес.</p>
-                <button class="inter_15_bold">Выбрать <img src="../web/img/club_cards/актиВыбор.png"
-                        alt="стрелка"></button>
+        <div class="club-cards-container">
+             <div class="club-card active">
+        <button class="arrow-btn">
+            <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх">
+        </button>
+        <div class="card-content">
+            <img class="card-icon" src="../web/img/club_cards/cloud.png" alt="Утренний">
+            <div class="card-header">
+                <p class="title-active">Утренний</p>
             </div>
-            <div class="season-tickets-card">
-                <button><img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt=""></button>
-                <p class="inter_20_bold">Вечерний</p>
-                <button class="inter_15_bold">Выбрать <img src="../web/img/club_cards/неАктивВыбор.png"
-                        alt="стрелка"></button>
-            </div>
-            <div class="season-tickets-card">
-                <button><img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt=""></button>
-                <p class="inter_20_bold">Семейный</p>
-                <button class="inter_15_bold">Выбрать <img src="../web/img/club_cards/неАктивВыбор.png"
-                        alt="стрелка"></button>
-            </div>
-            <div class="season-tickets-card">
-                <button><img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt=""></button>
-                <p class="inter_20_bold">Актив</p>
-                <button class="inter_15_bold">Выбрать <img src="../web/img/club_cards/неАктивВыбор.png"
-                        alt="стрелка"></button>
-            </div>
-            <div class="season-tickets-card">
-                <button><img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt=""></button>
-                <p class="inter_20_bold">Студенческий</p>
-                <button class="inter_15_bold">Выбрать <img src="../web/img/club_cards/неАктивВыбор.png"
-                        alt="стрелка"></button>
-            </div>
-            <div class="season-tickets-card">
-                <button><img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt=""></button>
-                <p class="inter_20_bold">Безлимит</p>
-                <button class="inter_15_bold">Выбрать <img src="../web/img/club_cards/неАктивВыбор.png"
-                        alt="стрелка"></button>
+            <ul class="card-features">
+                <li>Доступ в тренажерный зал с 7:00 до 13:00</li>
+                <li>Посещение 3 утренних групповых занятий в неделю</li>
+                <li>Скидка на продукты в фитнес-баре до 13:00</li>
+            </ul>
+            <div class="card-footer">
+                <p class="price">2000₽/мес.</p>
+                <button class="select-btn active-btn">
+                    Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                </button>
             </div>
         </div>
-        <div>
-            <h2>О клубе Vita</h2>
-            <!-- <video src="" autoplay poster=""></video> -->
-            <img src="../web/img/club_cards/видео.png" alt="Видео о залах фитнес-центра VITA">
+    </div>
+            <div class="club-card dark-blue">
+                <button class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
+                </button>
+                <div class="card-preview ">
+                    <p class="title-inactive">Вечерний</p>
+                    <button class="select-btn inactive-btn">
+                        Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
+                    </button>
+                </div>
+            </div>
+
+            <div class="club-card light-blue">
+                <button class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
+                </button>
+                <div class="card-preview ">
+                    <p class="title-inactive">Семейный</p>
+                    <button class="select-btn inactive-btn">
+                        Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
+                    </button>
+                </div>
+            </div>
+
+            <div class="club-card gray">
+                <button class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
+                </button>
+                <div class="card-preview ">
+                    <p class="title-inactive">Актив</p>
+                    <button class="select-btn inactive-btn">
+                        Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
+                    </button>
+                </div>
+            </div>
+
+            <div class="club-card dark-blue">
+                <button class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
+                </button>
+                <div class="card-preview ">
+                    <p class="title-inactive">Студенческий</p>
+                    <button class="select-btn inactive-btn">
+                        Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
+                    </button>
+                </div>
+            </div>
+
+            <div class="club-card light-blue">
+                <button class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
+                </button>
+                <div class="card-preview ">
+                    <p class="title-inactive">Безлимит</p>
+                    <button class="select-btn inactive-btn">
+                        Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-club">
+            <p class="about">О клубе <span>Vita</span></p>
+            <div class="video-placeholder">
+                <img src="../web/img/club_cards/видео.png" alt="Видео о залах фитнес-центра VITA">
+            </div>
         </div>
     </main>
     <footer>
-        <div>
-            <div>
-                <p class="inter_24_bold">Разделы</p>
-                <nav>
-                    <li><a href="http://127.0.0.1:5500/html/index.html">Главное</a></li>
-                    <li><a href="http://127.0.0.1:5500/html/club_cards.html">Клубные карты</a></li>
-                    <li><a href="http://">Направления</a></li>
-                    <li><a href="http://">Тренеры</a></li>
-                </nav>
+        <div class="footer-content">
+            <div class="sections">
+                <p class="title-sections">Разделы</p>
+                <div class="footer-nav">
+                    <a href="http://127.0.0.1:5500/html/index.html">Главное</a>
+                    <a href="http://127.0.0.1:5500/html/club_cards.html">Клубные карты</a>
+                    <a href="http://127.0.0.1:5500/html/directions.html">Направления</a>
+                    <a href="http://127.0.0.1:5500/html/coaches.html">Тренеры</a>
+                </div>
             </div>
-            <div>
-                <p class="inter_24_bold">Соц. сети</p>
-                <p><a href="http://">VKontakte </a></p>
-                <p><a href="http://">Telegram</a></p>
+            <div class="sections">
+                <p class="title-sections">Соц. сети</p>
+                <div class="footer-nav">
+                    <a href="http://">VKontakte</a>
+                    <a href="http://">Telegram</a>
+                </div>
             </div>
-            <div>
-                <p class="inter_24_bold">Контакты</p>
-                <p class="inter_15_regular">Адрес: г. Москва, ул. Спортивная, 15</p>
-                <p class="inter_15_regular">Телефон: +7 (495) 123-45-67</p>
-                <p class="inter_15_regular">Email: info@vita-fitness.ru</p>
-                <p class="inter_15_regular">График работы: Пн-Пт: 7:00 -23:00,Сб-Вс: 9:00 - 22:00</p>
-                <p class="inter_15_bold">Vita 2025</p>
+            <div class="sections">
+                <p class="title-sections">Контакты</p>
+                <div class="footer-contacts">
+                    <p class="inter_15_regular">Адрес: г. Москва, ул. Спортивная, 15</p>
+                    <p class="inter_15_regular">Телефон: +7 (495) 123-45-67</p>
+                    <p class="inter_15_regular">Email: info@vita-fitness.ru</p>
+                    <p class="inter_15_regular">График работы: Пн-Пт: 7:00 - 23:00,<br>Сб-Вс: 9:00 - 22:00</p>
+                </div>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="inter_15_bold">Vita 2025</p>
         </div>
     </footer>
 </body>
