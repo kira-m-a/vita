@@ -9,36 +9,49 @@
 </head>
 
 <body>
-
+    <input type="checkbox" id="modal_auth">
     <header>
         <img class="logo" src="../web/img/index/Логотип.png" alt="Логотип фитнес-центра VITA">
         <nav>
-            <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
-            <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные карты</button></a>
-            <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
-            <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
+            <div class="nav1">
+                <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
+                <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные
+                        карты</button></a>
+                <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
+                <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
+            </div>
             <div class="nav2">
-                <a href="http://http://127.0.0.1:5500/html/auth.html">Войти</a>
-                <a href="http://"><button class="nav-button2">Регистрироваться</button></a>
+                <label for="modal_auth" class="login-btn">Войти</label>
+                <label for="modal_registration" class="registration-btn">Регистрироваться</label>
             </div>
         </nav>
     </header>
-    <main>
-        <div>
+
+
+    <div class="form-a">
+        <div class="head-form-a">
+            <label for="modal_auth" class="close-btn">×</label>
             <p class="inter_32_regular">Авторизация</p>
-            <div>
-                <input class="inter_18_bold" type="text" placeholder="Логин" name="text" id="text">
-            </div>
-            <div>
-                <input class="inter_18_bold" type="password" placeholder="Пароль" name="password" id="password">
-            </div>
-            <div>
-                <input type="checkbox" name="agree" id="agree">
-                <label class="inter_18_bold" for="agree">Запомнить меня</label>
-            </div>
-            <button class="inter_18_bold" type="submit">Войти</button>
+            <form action="/test" method="get">
+                <div>
+                    <div class="field">
+                        <input class="inter_18_bold" type="text" placeholder="Логин" name="text" id="text">
+                    </div>
+                    <div class="field">
+                        <input class="inter_18_bold" type="password" placeholder="Пароль" name="password" id="password">
+                    </div>
+                </div>
+                    <div class="check">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label class="inter_18_bold" for="agree">Запомнить меня</label>
+                    </div>
+                    <div>
+                        <button class="inter_18_bold" type="submit">Войти</button>
+                </div>
+            </form>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
+
