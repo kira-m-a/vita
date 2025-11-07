@@ -56,5 +56,31 @@
             <p class="inter_15_bold">Vita 2025</p>
         </div>
     </footer>
+    <input type="checkbox" id="modal_auth">
+    <div class="form-a">
+        <div class="head-form-a">
+            <label for="modal_auth" class="close-btn">×</label>
+            <h3> Авторизация</h3>
+            <form action="/test" method="get">
+                <div>
+                    <div class="field">
+                        <label for="text"></label>
+                        <input type="text" placeholder="Логин" name="text" id="text">
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="password" placeholder="Пароль" name="password" id="password">
+                    </div>
+                </div>
+                    <div class="check">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label class="inter_18_bold" for="agree">Запомнить меня</label>
+                    </div>
+                    <div>
+                        <button class="inter_18_bold" type="submit">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
