@@ -7,21 +7,57 @@
     <link rel="stylesheet" href="../web/css/style.css">
 </head>
 <body>
-    <!-- <form action="/test" method="get">
-        <div class="auth">
-            <p class="inter_32_regular">Авторизация</p>
-            <div class="field">
-                <input class="inter_18_bold" type="text" placeholder="Логин" name="text" id="text">
+   <input type="checkbox" id="modal_registration">
+    <header>
+        <img class="logo" src="../web/img/index/Логотип.png" alt="Логотип фитнес-центра VITA">
+        <nav>
+            <div class="nav1">
+                <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
+                <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные
+                        карты</button></a>
+                <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
+                <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
             </div>
-            <div class="field">
-                <input class="inter_18_bold" type="password" placeholder="Пароль" name="password" id="password">
+            <div class="nav2">
+                <label for="modal_auth" class="login-btn">Войти</label>
+                <label for="modal_registration" class="registration-btn">Регистрироваться</label>
             </div>
-            <div>
-                <input type="checkbox" name="agree" id="agree">
-                <label class="inter_18_bold" for="agree">Запомнить меня</label>
-            </div>
-            <button class="inter_18_bold" type="submit">Войти</button>
+        </nav>
+    </header>
+
+
+    <div class="form-r">
+        <div class="head-form-r">
+            <label for="modal_registration" class="close-btn">×</label>
+            <h3>Регистрация</h3>
+            <form action="/test" method="get">
+                <div>
+                    <div class="field">
+                        <label for="text"></label>
+                        <input type="text" placeholder="Почта" name="text" id="text">
+                    </div>
+                    <div class="field">
+                        <label for="text"></label>
+                        <input type="text" placeholder="Логин" name="text" id="text">
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="password" placeholder="Пароль" name="password" id="password">
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="password" placeholder="Повторите пароль" name="password" id="password">
+                    </div>
+                </div>
+                    <div class="check_r">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <div>
+                        <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
         </div>
-    </form> -->
+    </div>
 </body>
 </html>
