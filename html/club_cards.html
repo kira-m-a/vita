@@ -10,14 +10,16 @@
 
 <body>
     <header>
-        <img class="logo" src="../web/img/index/Логотип.png" alt="Логотип фитнес-центра VITA">
+        <a href="http://127.0.0.1:5500/html/index.html"><img class="logo" src="../web/img/index/Логотип.svg"
+                alt="Логотип фитнес-центра VITA"></a>
         <nav>
             <div class="nav1">
-            <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
-            <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные карты</button></a>
-            <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
-            <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
-        </div>
+                <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
+                <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные
+                        карты</button></a>
+                <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
+                <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
+            </div>
             <div class="nav2">
                 <label for="modal_auth" class="login-btn">Войти</label>
                 <label for="modal_registration" class="registration-btn">Регистрироваться</label>
@@ -26,85 +28,189 @@
     </header>
     <main>
         <div class="club-cards-container">
-             <div class="club-card active">
-        <button class="arrow-btn">
-            <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх">
-        </button>
-        <div class="card-content">
-            <img class="card-icon" src="../web/img/club_cards/cloud.png" alt="Утренний">
-            <div class="card-header">
-                <p class="title-active">Утренний</p>
+            
+            <div class="club-card gray" id="morning">
+                <a href="#morning" class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз" class="arrow-down">
+                    <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх" class="arrow-up">
+                </a>
+                <div class="card-preview">
+                    <p class="title-inactive">Утренний</p>
+                    <a href="#morning" class="select-btn inactive-btn">
+                        Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
+                    </a>
+                </div>
+                <div class="card-content">
+                    <img class="card-icon" src="../web/img/club_cards/cloud.png" alt="Утренний">
+                    <div class="card-header">
+                        <p class="title-active">Утренний</p>
+                    </div>
+                    <ul class="card-features">
+                        <li>Доступ в тренажерный зал с 7:00 до 13:00</li>
+                        <li>Посещение 3 утренних групповых занятий в неделю</li>
+                        <li>Скидка на продукты в фитнес-баре до 13:00</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p class="price">2000₽/мес.</p>
+                        <a href="#morning" class="select-btn active-btn">
+                            Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <ul class="card-features">
-                <li>Доступ в тренажерный зал с 7:00 до 13:00</li>
-                <li>Посещение 3 утренних групповых занятий в неделю</li>
-                <li>Скидка на продукты в фитнес-баре до 13:00</li>
-            </ul>
-            <div class="card-footer">
-                <p class="price">2000₽/мес.</p>
-                <button class="select-btn active-btn">
-                    Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
-                </button>
-            </div>
-        </div>
-    </div>
-            <div class="club-card dark-blue">
-                <button class="arrow-btn">
-                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
-                </button>
-                <div class="card-preview ">
+
+            
+            <div class="club-card dark-blue" id="evening">
+                <a href="#evening" class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз" class="arrow-down">
+                    <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх" class="arrow-up">
+                </a>
+                <div class="card-preview">
                     <p class="title-inactive">Вечерний</p>
-                    <button class="select-btn inactive-btn">
+                    <a href="#evening" class="select-btn inactive-btn">
                         Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
-                    </button>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <img class="card-icon" src="../web/img/club_cards/clock.png" alt="часы">
+                    <div class="card-header">
+                        <p class="title-active">Вечерний</p>
+                    </div>
+                    <ul class="card-features">
+                        <li>Доступ в тренажерный зал с 19:00</li>
+                        <li>Посещение 3 вечерних групповых занятий в неделю</li>
+                        <li>Скидка на продукты в фитнес-баре после 20:00</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p class="price">5000₽/мес.</p>
+                        <a href="#evening" class="select-btn active-btn">
+                            Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="club-card light-blue">
-                <button class="arrow-btn">
-                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
-                </button>
-                <div class="card-preview ">
+            
+            <div class="club-card light-blue" id="family">
+                <a href="#family" class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз" class="arrow-down">
+                    <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх" class="arrow-up">
+                </a>
+                <div class="card-preview">
                     <p class="title-inactive">Семейный</p>
-                    <button class="select-btn inactive-btn">
+                    <a href="#family" class="select-btn inactive-btn">
                         Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
-                    </button>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <img class="card-icon" src="../web/img/club_cards/home.png" alt="дом">
+                    <div class="card-header">
+                        <p class="title-active">Семейный</p>
+                    </div>
+                    <ul class="card-features">
+                        <li>До 5 безлимитных абонемента "Актив"</li>
+                        <li>Скидка 15% на персональные тренировки</li>
+                        <li>Включение посещения детского клуба</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p class="price">От 4000₽/мес.</p>
+                        <a href="#family" class="select-btn active-btn">
+                            Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="club-card gray">
-                <button class="arrow-btn">
-                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
-                </button>
-                <div class="card-preview ">
+            
+            <div class="club-card gray" id="active">
+                <a href="#active" class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз" class="arrow-down">
+                    <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх" class="arrow-up">
+                </a>
+                <div class="card-preview">
                     <p class="title-inactive">Актив</p>
-                    <button class="select-btn inactive-btn">
+                    <a href="#active" class="select-btn inactive-btn">
                         Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
-                    </button>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <img class="card-icon" src="../web/img/club_cards/rocket.png" alt="ракета">
+                    <div class="card-header">
+                        <p class="title-active">Актив</p>
+                    </div>
+                    <ul class="card-features">
+                        <li>Тренировки в любое время работы клуба</li>
+                        <li>Полный доступ к основным зонам</li>
+                        <li>Посещение любого филиала по единому абонементу</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p class="price">4000₽/мес.</p>
+                        <a href="#active" class="select-btn active-btn">
+                            Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="club-card dark-blue">
-                <button class="arrow-btn">
-                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
-                </button>
-                <div class="card-preview ">
+           
+            <div class="club-card dark-blue" id="student">
+                <a href="#student" class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз" class="arrow-down">
+                    <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх" class="arrow-up">
+                </a>
+                <div class="card-preview">
                     <p class="title-inactive">Студенческий</p>
-                    <button class="select-btn inactive-btn">
+                    <a href="#student" class="select-btn inactive-btn">
                         Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
-                    </button>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <img class="card-icon" src="../web/img/club_cards/bag.png" alt="сумка">
+                    <div class="card-header">
+                        <p class="title-active">Студенческий</p>
+                    </div>
+                    <ul class="card-features">
+                        <li>Скидка 20% на все абонементы</li>
+                        <li>Студенческие сообщества и события</li>
+                        <li>Полный доступ к основным зонам</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p class="price">От 1500₽/мес.</p>
+                        <a href="#student" class="select-btn active-btn">
+                            Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="club-card light-blue">
-                <button class="arrow-btn">
-                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз">
-                </button>
-                <div class="card-preview ">
+            
+            <div class="club-card light-blue" id="unlimited">
+                <a href="#unlimited" class="arrow-btn">
+                    <img src="../web/img/club_cards/неАктивнаяСтрелка.png" alt="Стрелка вниз" class="arrow-down">
+                    <img src="../web/img/club_cards/активнаяСтрелка.png" alt="Стрелка вверх" class="arrow-up">
+                </a>
+                <div class="card-preview">
                     <p class="title-inactive">Безлимит</p>
-                    <button class="select-btn inactive-btn">
+                    <a href="#unlimited" class="select-btn inactive-btn">
                         Выбрать <img src="../web/img/club_cards/неАктивВыбор.png" alt="стрелка">
-                    </button>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <img class="card-icon" src="../web/img/club_cards/light.png" alt="лампочка">
+                    <div class="card-header">
+                        <p class="title-active">Безлимит</p>
+                    </div>
+                    <ul class="card-features">
+                        <li>Доступ во все зоны</li>
+                        <li>Посещение любых групповых занятий</li>
+                        <li>Личный консультант по фитнесу</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p class="price">7500₽/мес.</p>
+                        <a href="#unlimited" class="select-btn active-btn">
+                            Выбрать <img src="../web/img/club_cards/актиВыбор.png" alt="стрелка">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,7 +257,7 @@
     <input type="checkbox" id="modal_auth">
     <div class="form-a">
         <div class="head-form-a">
-            <label for="modal_auth" class="close-btn">×</label>
+            <label for="modal_auth" class="close-btn">&times</label>
             <h3> Авторизация</h3>
             <form action="/test" method="get">
                 <div>
@@ -164,12 +270,12 @@
                         <input type="password" placeholder="Пароль" name="password" id="password">
                     </div>
                 </div>
-                    <div class="check_a">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label class="inter_18_bold" for="agree">Запомнить меня</label>
-                    </div>
-                    <div>
-                        <button class="inter_18_bold" type="submit">Войти</button>
+                <div class="check_a">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label class="inter_18_bold" for="agree">Запомнить меня</label>
+                </div>
+                <div>
+                    <button class="inter_18_bold" type="submit">Войти</button>
                 </div>
             </form>
         </div>
@@ -178,7 +284,7 @@
     <input type="checkbox" id="modal_registration">
     <div class="form-r">
         <div class="head-form-r">
-            <label for="modal_registration" class="close-btn">×</label>
+            <label for="modal_registration" class="close-btn">&times</label>
             <h3>Регистрация</h3>
             <form action="/test" method="get">
                 <div>
@@ -199,12 +305,12 @@
                         <input type="password" placeholder="Повторите пароль" name="password" id="password">
                     </div>
                 </div>
-                    <div class="check_r">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
-                    </div>
-                    <div>
-                        <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
+                <div class="check_r">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+                <div>
+                    <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
                 </div>
             </form>
         </div>

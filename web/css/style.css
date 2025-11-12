@@ -135,7 +135,7 @@ nav a {
     color: #00173C;
 }
 
-.nav1{
+.nav1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -214,6 +214,9 @@ nav a {
 
 }
 
+
+/* index */
+
 .banner {
     display: flex;
     color: white;
@@ -245,7 +248,7 @@ nav a {
     display: flex;
     width: 256px;
     height: 91px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .info {
@@ -344,7 +347,7 @@ nav a {
     font-family: 'Inter_r';
     font-size: 24px;
     align-items: center;
-    
+
     width: 361px;
     height: 75px;
     border-radius: 30px;
@@ -404,11 +407,13 @@ nav a {
 .advantages-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 234px;
+    height: 400px;
 
 }
 
-.text-advantages1{
+.text-advantages1 {
     font-family: 'Inter_b';
     font-size: 20px;
     color: #00173C;
@@ -416,7 +421,7 @@ nav a {
     margin: 0px 0px 3px;
 }
 
-.text-advantages2{
+.text-advantages2 {
     font-family: 'Inter_r';
     font-size: 15px;
     color: #6B7180;
@@ -424,39 +429,42 @@ nav a {
     vertical-align: text-top;
 }
 
-.icon1, .icon2, .icon3, .icon4{
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
     display: flex;
-justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .icon1 {
-    width: 106px;
-    height: 140px;
+    width: 181px;
+    height: 170px;
     margin: 0px 0px 35px;
 }
 
 .icon2 {
-    width: 151px;
-    height: 160.03px;
+    width: 181px;
+    height: 170px;
     margin: 0px 0px 35px;
 }
 
 .icon3 {
-    width: 123px;
-    height: 135px;
+    width: 181px;
+    height: 170px;
     margin: 0px 0px 35px;
 }
 
 .icon4 {
-    width: 71px;
-    height: 117px;
+    width: 181px;
+    height: 170px;
     margin: 0px 0px 35px;
 }
 
 
 
 
-.season-tickets{
+.season-tickets {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -482,7 +490,7 @@ justify-content: flex-end;
     box-shadow: 0 10px 20px rgba(0, 23, 60, 0.2);
 }
 
-.img-icon{
+.img-icon {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -492,7 +500,7 @@ justify-content: flex-end;
     z-index: 1;
 }
 
-.title-card{
+.title-card {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -505,7 +513,7 @@ justify-content: flex-end;
     z-index: 2;
 }
 
-.price-card{
+.price-card {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -519,7 +527,7 @@ justify-content: flex-end;
     margin: 152px 0 0;
 }
 
-.discription{
+.discription {
     display: flex;
     justify-content: center;
     font-family: 'Inter_r';
@@ -533,13 +541,12 @@ justify-content: flex-end;
     z-index: 2;
 }
 
-.end-d{
+.end-d {
     font-family: 'Inter_r';
     font-size: 15px;
     justify-content: center;
     color: #6B7180;
-    margin: 10px 0 0;
-    width: 100%;
+    margin: 10px 15px;
 }
 
 .card {
@@ -708,7 +715,7 @@ footer {
 
 
 
-
+/* club card*/
 
 
 .club-cards-container {
@@ -764,9 +771,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 300px;
+    justify-content: flex-end;
+    margin-top: auto;
     gap: 10px;
+    padding-bottom: 20px;
+    height: 100%;
 
 }
 
@@ -811,7 +820,7 @@ footer {
 .card-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     margin: 100px 0px 0px;
     margin-bottom: 5px;
 }
@@ -832,13 +841,14 @@ footer {
     flex-direction: column;
     gap: 15px;
     flex-grow: 1;
-     margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .card-features li {
     font-family: 'Inter_r';
     font-size: 15px;
     position: relative;
+    color: white;
     padding-left: 20px;
     line-height: 1.4;
     text-align: left;
@@ -876,12 +886,14 @@ footer {
     display: flex;
     align-items: center;
     padding: 5px 20px;
-    border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Inter_b';
     font-size: 15px;
+    text-decoration: none;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .active-btn {
@@ -889,6 +901,7 @@ footer {
     color: #00173C;
     width: 350px;
     gap: 194px;
+    border: none;
 }
 
 .active-btn:hover {
@@ -898,8 +911,9 @@ footer {
 .inactive-btn {
     background-color: #00173C;
     color: white;
-    gap: 25px;
     width: 141px;
+    gap: 25px;
+    border: none;
 }
 
 .inactive-btn:hover {
@@ -907,19 +921,23 @@ footer {
 }
 
 .arrow-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
     background: none;
     border: none;
     cursor: pointer;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
 }
 
 .arrow-btn img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: auto;
 }
 
 .card-icon {
@@ -936,8 +954,114 @@ footer {
 
 
 
+/* Анимация клубных карт */
+.club-card {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    width: 170px;
+    height: 450px;
+    border-radius: 20px;
+}
 
-.about-club{
+
+.club-card .card-content {
+    display: none;
+}
+
+.club-card .card-preview {
+    display: flex;
+}
+
+
+.club-card:target {
+    background-color: #00173C !important;
+    width: 400px !important;
+    height: 450px !important;
+}
+
+.club-card:target .card-content {
+    display: flex;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.club-card:target .card-preview {
+    display: none;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+
+.club-card .arrow-up {
+    display: none;
+}
+
+.club-card:target .arrow-down {
+    display: none;
+}
+
+.club-card:target .arrow-up {
+    display: block;
+}
+
+.club-card:target .arrow-btn {
+    cursor: pointer;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.club-card:target .card-content {
+    animation: slideIn 0.3s ease-out;
+}
+
+
+.arrow-btn,
+.select-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.club-card.active {
+    display: none;
+}
+
+
+.club-card:target .arrow-btn {
+    top: 15px;
+    right: 15px;
+}
+
+
+.club-card .arrow-btn {
+    top: 15px;
+    right: 15px;
+}
+
+/*  */
+
+
+
+
+
+
+
+.about-club {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -949,22 +1073,22 @@ footer {
     box-sizing: border-box;
 }
 
-.about{
+.about {
     font-family: 'Inter_r';
     font-size: 32px;
     color: #6B7180;
     margin: 30px 0;
-    text-align: left; 
+    text-align: left;
     width: 100%;
 }
 
-.about span{
+.about span {
     font-family: 'Inter_b';
     font-size: 32px;
     color: #00173C;
 }
 
-.video-placeholder{
+.video-placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -991,7 +1115,7 @@ footer {
 
 
 
-
+/* modal */
 
 
 
@@ -1032,12 +1156,12 @@ footer {
     display: none;
 }
 
-#modal_registration:checked ~ .form-r {
+#modal_registration:checked~.form-r {
     opacity: 1;
     visibility: visible;
 }
 
-#modal_registration:checked ~ .form-r .head-form-r {
+#modal_registration:checked~.form-r .head-form-r {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -1053,6 +1177,7 @@ footer {
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
+
 .head-form-r button[type="submit"] {
     width: 100%;
     padding: 5px 17px;
@@ -1067,7 +1192,7 @@ footer {
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-     display: block;
+    display: block;
     margin: 0 auto;
 }
 
@@ -1147,12 +1272,12 @@ footer {
     display: none;
 }
 
-#modal_auth:checked ~ .form-a {
+#modal_auth:checked~.form-a {
     opacity: 1;
     visibility: visible;
 }
 
-#modal_auth:checked ~ .form-a .head-form-a {
+#modal_auth:checked~.form-a .head-form-a {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -1241,7 +1366,7 @@ footer {
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-     display: block;
+    display: block;
     margin: 0 auto;
 }
 
@@ -1259,7 +1384,8 @@ footer {
     right: 20px;
     background: none;
     border: none;
-    font-size: 50px;
+    font-size: 35px;
+    font-weight: 200;
     color: #6B7180;
     cursor: pointer;
     width: 35px;
@@ -1267,11 +1393,18 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-    font-family: Arial, sans-serif;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    z-index: 1001;
 }
 
 .close-btn:hover {
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(0, 23, 60, 0.1);
+    color: #00173C;
+    transform: scale(1.1);
 }
+
+.close-btn:active {
+    transform: scale(0.95);
+}
+

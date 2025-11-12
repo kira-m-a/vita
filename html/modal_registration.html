@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
     <link rel="stylesheet" href="../web/css/style.css">
 </head>
+
 <body>
-   <input type="checkbox" id="modal_registration">
+    <input type="checkbox" id="modal_registration">
     <header>
-        <img class="logo" src="../web/img/index/Логотип.png" alt="Логотип фитнес-центра VITA">
+        <a href="http://127.0.0.1:5500/html/index.html"><img class="logo" src="../web/img/index/Логотип.png"
+                alt="Логотип фитнес-центра VITA"></a>
         <nav>
             <div class="nav1">
                 <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
@@ -28,7 +31,7 @@
 
     <div class="form-r">
         <div class="head-form-r">
-            <label for="modal_registration" class="close-btn">×</label>
+            <label for="modal_registration" class="close-btn">&times</label>
             <h3>Регистрация</h3>
             <form action="/test" method="get">
                 <div>
@@ -49,15 +52,16 @@
                         <input type="password" placeholder="Повторите пароль" name="password" id="password">
                     </div>
                 </div>
-                    <div class="check_r">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
-                    </div>
-                    <div>
-                        <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
+                <div class="check_r">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+                <div>
+                    <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>
