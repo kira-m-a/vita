@@ -23,24 +23,88 @@
         </nav>
     </header>
     <main>
-        
+        <div class="directions">
+            
+            <div class="explanation">
+                <h4>«ФОРСАЖ»</h4>
+                <p>Динамичная и мощная тренировка, построенная на чередовании коротких периодов максимальной нагрузки и краткого отдыха. Используется собственный вес, гири, санки и канаты. Идеально для сжигания жира, развития выносливости и силовой выносливости. Для подготовленных.</p>
+                <label for="modal_record" class="record_btn">Записаться</label>
+            </div>
+            <img class="item_img" src="../web/img/directions/hull1.svg" alt="фото зала с гирями и тренажерами">
+            
+
+            
+            <img class="item_img" src="../web/img/directions/dance.svg" alt="фото танцевального зала">
+            <div class="explanation">
+                <h4>«DANCE MIX»</h4>
+                <p>Танцевальный микс из самых популярных направлений (латина, хип-хоп, хаус). Не нужно уметь танцевать! Главное — двигаться в ритм, сбрасывать напряжение и получать заряд позитива. Отличная кардио-нагрузка и улучшение координации.</p>
+                <label for="modal_record" class="record_btn">Записаться</label>
+            </div>
+            
+
+            
+            <div class="explanation">
+                <h4>«СТАЛЬНЫЕ МЫШЦЫ»</h4>
+                <p>Классическая силовая тренировка со штангой, гантелями и в тренажерах. Направлена на увеличение мышечной массы и силы. Тренер научит правильной технике базовых упражнений (приседания, жимы, тяги) для максимальной эффективности и безопасности.</p>
+                <label for="modal_record" class="record_btn">Записаться</label>
+            </div>
+            <img class="item_img" src="../web/img/directions/hull2.svg" alt="фото зала">
+            
+        </div>
+
+    <div class="filter">
+        <h4>Фильтр</h4>
+    </div>
+
+<div class="data">
+    <p>пн 22.09</p>
+        <p >вт 23.09</p>
+        <p >ср 24.09</p>
+        <p >чт 25.09</p>
+        <p >пт 26.09</p>
+        <p >сб 27.09</p>
+        <p >вс 28.09</p>
+</div>
+
+    <div class="schedule">
+        <div class="workout"><p>1</p></div>
+        <div class="workout"><p>1</p></div>
+        <div class="workout"><p>1</p></div>
+        <div class="workout"><p>2</p></div>
+        <div class="workout"><p>2</p></div>
+        <div class="workout"><p>2</p></div>
+        <div class="workout"><p>2</p></div>
+        <div class="workout"><p>2</p></div>
+        <div class="workout"><p>3</p></div>
+        <div class="workout"><p>3</p></div>
+        <div class="workout"><p>3</p></div>
+        <div class="workout"><p>3</p></div>
+        <div class="workout"><p>4</p></div>
+        <div class="workout"><p>5</p></div>
+        <div class="workout"><p>6</p></div>
+        <div class="workout"><p>6</p></div>
+        <div class="workout"><p>7</p></div>
+        <div class="workout"><p>7</p></div>
+    </div>
+<div class="record-container">
+    <label for="modal_record" class="record_btn2">Записаться</label>
+</div>
     </main>
     <footer>
         <div class="footer-content">
             <div class="sections">
                 <p class="title-sections">Разделы</p>
                 <div class="footer-nav">
-                    <a href="http://127.0.0.1:5500/html/index.html">Главное</a>
-                    <a href="http://127.0.0.1:5500/html/club_cards.html">Клубные карты</a>
-                    <a href="http://127.0.0.1:5500/html/directions.html">Направления</a>
-                    <a href="http://127.0.0.1:5500/html/coaches.html">Тренеры</a>
-                </div>
+                    <li><a href="http://127.0.0.1:5500/html/index.html">Главное</a></li>
+                    <li><a href="http://127.0.0.1:5500/html/club_cards.html">Клубные карты</a></li>
+                    <li><a href="http://127.0.0.1:5500/html/directions.html">Направления</a></li>
+                    <li><a href="http://127.0.0.1:5500/html/coaches.html">Тренеры</a></li></div>
             </div>
             <div class="sections">
                 <p class="title-sections">Соц. сети</p>
                 <div class="footer-nav">
-                    <a href="http://">VKontakte</a>
-                    <a href="http://">Telegram</a>
+                    <li><a href="http://">VKontakte</a></li>
+                    <li><a href="http://">Telegram</a></li>
                 </div>
             </div>
             <div class="sections">
@@ -57,6 +121,8 @@
             <p class="inter_15_bold">Vita 2025</p>
         </div>
     </footer>
+
+
     <input type="checkbox" id="modal_auth">
     <div class="form-a">
         <div class="head-form-a">
@@ -114,6 +180,39 @@
                     </div>
                     <div>
                         <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal_record">
+    <div class="form-rec">
+        <div class="head-form-rec">
+            <label for="modal_record" class="close-btn">&times</label>
+            <h3>Запись</h3>
+            <form action="/test" method="get">
+                <div>
+                    <div class="field">
+                        <select>
+                            <option value="option1">«ГРАВИТАЦИЯ»</option>
+                            <option value="option2">«ZB FITNESS»</option>
+                            <option value="option3">«DANCE MIX»</option>
+                            <option value="option4">«ФОРСАЖ»</option>
+                            <option value="option5">«СТАЛЬНЫЕ МЫШЦЫ»</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="date" placeholder="Дата" name="date" id="date">
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="time" placeholder="Время" name="time" id="time">
+                    </div>
+                </div>
+
+                <div class="record-proof">
+                    <label for="modal_proof" class="proof-btn">Записаться</label>
                 </div>
             </form>
         </div>

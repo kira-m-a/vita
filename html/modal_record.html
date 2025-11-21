@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="../web/css/style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="modal_record">
+    <header>
+        <a href="http://127.0.0.1:5500/html/index.html"><img class="logo" src="../web/img/index/Логотип.png"
+                alt="Логотип фитнес-центра VITA"></a>
+        <nav>
+            <div class="nav1">
+                <a href="http://127.0.0.1:5500/html/index.html"><button class="nav-button">Главное</button></a>
+                <a href="http://127.0.0.1:5500/html/club_cards.html"><button class="nav-button">Клубные
+                        карты</button></a>
+                <a href="http://127.0.0.1:5500/html/directions.html"><button class="nav-button">Направления</button></a>
+                <a href="http://127.0.0.1:5500/html/coaches.html"><button class="nav-button">Тренеры</button></a>
+            </div>
+            <div class="nav2">
+                <label for="modal_record" class="login-btn">Войти</label>
+                <label for="modal_registration" class="registration-btn">Регистрироваться</label>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="form-rec">
+        <div class="head-form-rec">
+            <label for="modal_record" class="close-btn">&times</label>
+            <h3>Запись</h3>
+            <form action="/test" method="get">
+                <div>
+                    <div class="field">
+                        <select>
+                            <option value="option1">«ГРАВИТАЦИЯ»</option>
+                            <option value="option2">«ZB FITNESS»</option>
+                            <option value="option3">«DANCE MIX»</option>
+                            <option value="option4">«ФОРСАЖ»</option>
+                            <option value="option5">«СТАЛЬНЫЕ МЫШЦЫ»</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="date" placeholder="Дата" name="date" id="date">
+                    </div>
+                    <div class="field">
+                        <label for="password"></label>
+                        <input type="time" placeholder="Время" name="time" id="time">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="modal_proof" class="proof-btn">Записаться</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
