@@ -1640,6 +1640,9 @@ grid-column: 1;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 0 auto;
     text-align: center;
+    display: block;
+    box-sizing: border-box;
+    max-width: 144px;
 }
 
 .proof-btn:hover {
