@@ -750,6 +750,34 @@ footer {
 
 
 
+.card-expand-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+.club-card:target .card-expand-area {
+    display: none;
+}
+
+
+.arrow-btn, .select-btn {
+    position: relative;
+    z-index: 10;
+}
+
+
+.club-card:not(:target):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 
@@ -781,7 +809,6 @@ footer {
     gap: 10px;
     padding-bottom: 20px;
     height: 100%;
-
 }
 
 .title-inactive {
@@ -960,7 +987,7 @@ footer {
 
 
 /* Анимация клубных карт */
-/* .club-card {
+.club-card { 
     transition: all 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -1056,7 +1083,7 @@ footer {
 .club-card .arrow-btn {
     top: 15px;
     right: 15px;
-} */
+}
 
 /*  */
 
@@ -1583,6 +1610,9 @@ grid-column: 1;
 .form-rec select{
     justify-content: center;
     margin-bottom: 40px;
+    font-family: 'Inter_b';
+    font-size: 18px;
+    color: #6B7180;
     width: 300px;
     height: 48px;
     border-radius: 30px;
@@ -1590,20 +1620,35 @@ grid-column: 1;
     position: relative
 }
 
-.proof-btn {
+.form-rec option{
     font-family: 'Inter_r';
-    font-size: 16px;
-    color: white;
-    background-color: #00173C;
-    border: none;
-    justify-content: center;
-    padding: 5px 10px;
-    border-radius: 30px;
-    cursor: pointer;
-    display: block;
-    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 20px;
+    color: #00173C;
 }
 
+.proof-btn {
+    width: 100%;
+    padding: 5px 17px;
+    background-color: #00173C;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-family: 'Inter_b';
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.proof-btn:hover {
+    transform: translateY(-1px);
+}
+
+.proof-btn:active {
+    transform: translateY(0);
+}
 
 
 
