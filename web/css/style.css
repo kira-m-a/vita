@@ -8,24 +8,29 @@
     src: url('../fonts/inter/Inter-Regular.otf');
 }
 
+header, footer{
+    all: unset !important;
+}
+
+
 
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    overflow-x: hidden;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    align-items: center !important;
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 main {
-    flex: 1;
-    width: 100%;
-    max-width: 1440px;
+    flex: 1 !important;
+    width: 100% !important;
+    max-width: 1440px !important;
 }
 
 
@@ -98,19 +103,19 @@ h2 {
 
 
 header {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px 0px 20px;
-    gap: 152px;
-    height: 0px;
-    max-width: 1360px;
-    width: 100%;
-    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative !important;
+    top: 10px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px 20px 0px 20px !important;
+    gap: 152px !important;
+    height: 0px !important;
+    max-width: 1360px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
 }
 
 button {
@@ -118,98 +123,100 @@ button {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 80px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    gap: 80px !important;
 }
 
 nav a {
-    font-family: 'Inter_r';
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    font-family: 'Inter_r' !important;
+    font-size: 16px !important;
+    display: flex !important;
+    flex-direction: row !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: none !important;
 }
 
 .nav1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 80px !important;
 }
 
 .nav2 {
-    font-family: 'Inter_r';
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #00173C;
-    gap: 5px;
+    font-family: 'Inter_r' !important;
+    font-size: 16px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    color: #00173C !important;
+    gap: 5px !important;
 }
 
 .nav-button {
-    font-family: 'Inter_r';
-    font-size: 16px;
-    display: flex;
-    color: white;
-    background-color: #00173C;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-family: 'Inter_r' !important;
+    font-size: 16px !important;
+    display: flex !important;
+    color: white !important;
+    background-color: #00173C !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
 }
 
 .nav-button:hover {
-    background-color: #003366;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 23, 60, 0.3);
+    background-color: #003366 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 23, 60, 0.3) !important;
 }
 
 
 .registration-btn {
-    font-family: 'Inter_r';
-    font-size: 16px;
-    display: flex;
-    color: #00173C;
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 1px solid #00173C;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-family: 'Inter_r' !important;
+    font-size: 16px !important;
+    display: flex !important;
+    color: #00173C !important;
+    padding: 5px 10px !important;
+    box-sizing: border-box !important;
+    background-color: transparent !important;
+    border: 1px solid #00173C !important;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
 }
 
 .registration-btn:hover {
-    background-color: #00173c1a;
-    border: 1px solid #00173c1a;
+    background-color: #00173c1a !important;
+    border: 1px solid #00173c1a !important;
 }
 
 .login-btn {
-    font-family: 'Inter_r';
-    font-size: 16px;
-    color: #00173C;
-    background-color: transparent;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-family: 'Inter_r' !important;
+    font-size: 16px !important;
+    color: #00173C !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 5px 10px !important;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
 }
 
 .login-btn:hover {
-    background-color: #00173c1a;
+    background-color: #00173c1a !important;
 }
 
 .logo {
-    display: flex;
-    width: 131px;
-    height: 47px;
+    display: flex !important;
+    width: 131px !important;
+    height: 47px !important;
 
 }
 
@@ -642,15 +649,15 @@ font-family: 'Inter_r';
 
 
 footer {
-    display: flex;
-    background-color: #00173C;
-    width: 100%;
-    max-width: 1440px;
-    color: white;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 40px 0 20px;
-    box-sizing: border-box;
+    display: flex !important;
+    background-color: #00173C !important;
+    width: 100% !important;
+    max-width: 1440px !important;
+    color: white !important;
+    flex-direction: column !important;
+    margin-top: 20px !important;
+    padding: 40px 0 20px !important;
+    box-sizing: border-box !important;
 }
 
 .footer-content {
@@ -1422,33 +1429,33 @@ footer {
 }
 
 .close-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    position: absolute ;
+    top: 15px !important;
+    right: 15px !important;
     background: none;
     border: none;
-    font-size: 35px;
-    font-weight: 200;
-    color: #6B7180;
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-    transition: all 0.3s ease;
-    z-index: 1001;
+    font-size: 35px ;
+    font-weight: 200 ;
+    color: #6B7180 ;
+    cursor: pointer ;
+    width: 35px ;
+    height: 35px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    border-radius: 40px ;
+    transition: all 0.3s ease ;
+    z-index: 1001 ;
 }
 
 .close-btn:hover {
-    background-color: rgba(0, 23, 60, 0.1);
-    color: #00173C;
-    transform: scale(1.1);
+    background-color: rgba(0, 23, 60, 0.1) ;
+    color: #00173C ;
+    transform: scale(1.1) ;
 }
 
 .close-btn:active {
-    transform: scale(0.95);
+    transform: scale(0.95) ;
 }
 
 
@@ -1742,3 +1749,148 @@ h4{
     }
 
 }
+
+
+
+/* coaches */
+
+
+
+#carouselExampleIndicators{
+    margin: 100px 20px 50px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.carousel-inner {
+padding: 0px 10px 0px;
+width: 100%;
+}
+
+.carousel-item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    min-height: 500px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+.nameL{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    flex: 1;
+    min-width: 0;
+    color: #00173C;
+    background-image: url(../img/coauches/right.svg);
+    background-size: contain;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    max-width: 670px;
+    height: auto;
+}
+
+.nameL p{
+    font-family: 'Inter_r';
+    font-size: 24px;
+    color: #00173C;
+    max-width: 521px;
+}
+
+.nameL span{
+    font-family: 'Inter_b';
+    font-size: 24px;
+    color: #00173C;
+    max-width: 521px;
+}
+
+.nameR p{
+    font-family: 'Inter_r';
+    font-size: 24px;
+    color: #00173C;
+    max-width: 521px;
+}
+
+.nameR span{
+    font-family: 'Inter_b';
+    font-size: 24px;
+    color: #00173C;
+    max-width: 521px;
+}
+
+.nameR{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    flex: 1;
+    min-width: 0;
+    color: #00173C;
+    background-image: url(../img/coauches/left.svg);
+    background-size: contain;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    max-width: 670px;
+    height: auto;
+}
+
+
+
+.name{
+    background-color: #9AB3DA;
+    color: #00173C;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 492px;
+    height: auto;
+}
+
+.name p {
+    font-family: 'Inter_b';
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.hall_portrait{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    flex: 1;
+    min-width: 0;
+    gap: 20px;
+}
+
+
+.coach{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #00173C;
+    border-radius: 30px;
+    padding: 28px;
+    box-sizing: border-box;
+    max-width: 670px;
+    height: auto;
+    /*  max-height: 254px;  */
+    gap: 20px;
+    align-items: center;
+}
+.coach p {
+    color: white;
+    font-family: 'Inter_r';
+    font-size: 24px;
+}
+
+.portrait{
+    max-width: 157px;
+    height: auto;
+}
+
+.hall img{
+    max-width: 100%;
+    height: auto;
+}
+
