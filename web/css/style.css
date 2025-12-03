@@ -1756,141 +1756,178 @@ h4{
 
 
 
-#carouselExampleIndicators{
+/* coaches БЭМ стили */
+
+.coaches-carousel {
     margin: 100px 20px 50px;
     max-width: 1400px;
     width: 100%;
 }
 
-.carousel-inner {
-padding: 0px 10px 0px;
-width: 100%;
+.coaches-carousel__item {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
 }
 
-.carousel-item{
+.coaches-carousel__item--reversed {
+    flex-direction: row-reverse !important;
+}
+
+.coaches-carousel__info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
     gap: 20px;
-    width: 100%;
-    min-height: 500px;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-
-.nameL{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    flex: 1;
-    min-width: 0;
+    padding: 30px 20px 20px;
     color: #00173C;
-    background-image: url(../img/coauches/right.svg);
-    background-size: contain;
-    background-position: center 0px;
-    background-repeat: no-repeat;
+    background-color: rgb(154, 179, 218, 0.5);
+    border-radius: 30px;
     max-width: 670px;
     height: auto;
 }
 
-.nameL p{
-    font-family: 'Inter_r';
-    font-size: 24px;
-    color: #00173C;
-    max-width: 521px;
+.coaches-carousel__info--left {
+    order: 1;
 }
 
-.nameL span{
-    font-family: 'Inter_b';
-    font-size: 24px;
-    color: #00173C;
-    max-width: 521px;
+.coaches-carousel__info--right {
+    order: 2;
 }
 
-.nameR p{
-    font-family: 'Inter_r';
-    font-size: 24px;
-    color: #00173C;
-    max-width: 521px;
-}
-
-.nameR span{
-    font-family: 'Inter_b';
-    font-size: 24px;
-    color: #00173C;
-    max-width: 521px;
-}
-
-.nameR{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    flex: 1;
-    min-width: 0;
-    color: #00173C;
-    background-image: url(../img/coauches/left.svg);
-    background-size: contain;
-    background-position: center 0px;
-    background-repeat: no-repeat;
-    max-width: 670px;
-    height: auto;
-}
-
-
-
-.name{
+.coaches-carousel__name {
     background-color: #9AB3DA;
     color: #00173C;
     border-radius: 20px;
     text-align: center;
     max-width: 492px;
     height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    left: 70px;
 }
 
-.name p {
+.coaches-carousel__name p {
     font-family: 'Inter_b';
     font-size: 32px;
-    margin: 20px 0;
+    margin: 10px 50px;
 }
 
-.hall_portrait{
+.coaches-carousel__description {
+    font-family: 'Inter_r';
+    font-size: 24px;
+    color: #00173C;
+    max-width: 610px;
+    margin: 0;
+}
+
+.coaches-carousel__highlight {
+    font-family: 'Inter_b';
+    font-size: 24px;
+    color: #00173C;
+}
+
+.coaches-carousel__visual {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 670px;
     width: 100%;
     flex: 1;
-    min-width: 0;
     gap: 20px;
 }
 
-
-.coach{
+.coaches-carousel__coach-card {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: #00173C;
     border-radius: 30px;
-    padding: 28px;
+    padding: 20px;
     box-sizing: border-box;
     max-width: 670px;
     height: auto;
-    /*  max-height: 254px;  */
     gap: 20px;
     align-items: center;
 }
-.coach p {
+
+.coaches-carousel__achievement {
     color: white;
     font-family: 'Inter_r';
     font-size: 24px;
+    margin: 0;
 }
 
-.portrait{
+.coaches-carousel__portrait {
     max-width: 157px;
     height: auto;
+    flex-shrink: 0;
 }
 
-.hall img{
+.coaches-carousel__hall {
     max-width: 100%;
     height: auto;
 }
+
+.coaches-carousel__hall-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-inner {
+    display: flex;
+    padding: 0px 10px 0px;
+    width: 100%;
+}
+
+.carousel-item {
+    opacity: 0 !important;
+}
+
+.carousel-item.active {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00173C !important;
+    border-radius: 50% !important;
+    padding: 20px !important;
+    background-size: 50% 50% !important;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #003366 !important;
+    transform: scale(1.1) !important;
+}
+
+.carousel-indicators button {
+    background-color: #9AB3DA !important;
+    width: 40px !important;
+    height: 6px !important;
+    border-radius: 3px !important;
+    border: none !important;
+    margin: 0 5px !important;
+    opacity: 0.7 !important;
+    transition: all 0.3s ease !important;
+}
+
+.carousel-indicators button.active {
+    background-color: #00173C !important;
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+}
+
+.carousel-indicators button:hover {
+    background-color: #5483DF !important;
+    opacity: 1 !important;
+}
+
+
 
