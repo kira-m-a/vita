@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../web/img/index/Логотип.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <script src="../web/js/validation.js"></script> -->
 </head>
 
 <body class="coaches-page">
@@ -158,60 +159,96 @@
         <div class="head-form-a">
             <label for="modal_auth" class="close-btn">&times</label>
             <h3> Авторизация</h3>
-            <form action="/test" method="get">
-                <div>
-                    <div class="field">
-                        <label for="text"></label>
-                        <input type="text" placeholder="Логин" name="text" id="text">
-                    </div>
-                    <div class="field">
-                        <label for="password"></label>
-                        <input type="password" placeholder="Пароль" name="password" id="password">
-                    </div>
-                </div>
-                <div class="check_a">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label class="inter_18_bold" for="agree">Запомнить меня</label>
-                </div>
-                <div>
-                    <button class="inter_18_bold" type="submit">Войти</button>
-                </div>
-            </form>
+            <form action="profile.html" method="get" id="authForm" novalidate>
+    <div>
+        <div class="field">
+            <input type="email" 
+                   placeholder="Почта" 
+                   id="loginEmail" 
+                   name="loginEmail" 
+                   required>
+            <div class="error-message" id="loginEmailError">Введите корректный email</div>
+        </div>
+        
+        <div class="field">
+            <input type="password" 
+                   placeholder="Пароль" 
+                   id="loginPassword" 
+                   name="loginPassword" 
+                   required
+                   minlength="3">
+            <div class="error-message" id="loginPasswordError">Минимум 3 символа</div>
+        </div>
+    </div>
+    
+    <div class="check_a">
+        <input type="checkbox" name="remember" id="remember">
+        <label class="inter_18_bold" for="remember">Запомнить меня</label>
+    </div>
+    
+    <div>
+        <button class="inter_18_bold" type="submit">Войти</button>
+    </div>
+</form>
         </div>
     </div>
 
     <input type="checkbox" id="modal_registration">
-    <div class="form-r">
+     <div class="form-r">
         <div class="head-form-r">
             <label for="modal_registration" class="close-btn">&times</label>
             <h3>Регистрация</h3>
-            <form action="/test" method="get">
-                <div>
-                    <div class="field">
-                        <label for="text"></label>
-                        <input type="text" placeholder="Почта" name="text" id="text">
-                    </div>
-                    <div class="field">
-                        <label for="text"></label>
-                        <input type="text" placeholder="Логин" name="text" id="text">
-                    </div>
-                    <div class="field">
-                        <label for="password"></label>
-                        <input type="password" placeholder="Пароль" name="password" id="password">
-                    </div>
-                    <div class="field">
-                        <label for="password"></label>
-                        <input type="password" placeholder="Повторите пароль" name="password" id="password">
-                    </div>
-                </div>
-                <div class="check_r">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
-                </div>
-                <div>
-                    <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
-                </div>
-            </form>
+            <form action="profile.html" method="get" id="registrationForm" novalidate>
+    <div>
+        <div class="field">
+            <input type="email" 
+                   placeholder="Почта" 
+                   id="email" 
+                   name="email" 
+                   required>
+            <div class="error-message" id="emailError">Введите корректный email</div>
+        </div>
+        
+        <div class="field">
+            <input type="text" 
+                   placeholder="Логин" 
+                   id="username" 
+                   name="username" 
+                   required 
+                   minlength="3">
+            <div class="error-message" id="usernameError">Логин от 3 символов</div>
+        </div>
+        
+        <div class="field">
+            <input type="password" 
+                   placeholder="Пароль" 
+                   id="password" 
+                   name="password" 
+                   required 
+                   minlength="3">
+            <div class="error-message" id="passwordError">Минимум 3 символа</div>
+        </div>
+        
+        <div class="field">
+            <input type="password" 
+                   placeholder="Повторите пароль" 
+                   id="confirmPassword" 
+                   name="confirmPassword" 
+                   required
+                   minlength="3">
+            <div class="error-message" id="confirmPasswordError">Повторите пароль</div>
+        </div>
+    </div>
+    
+    <div class="check_r">
+            <input type="checkbox" name="agree" id="agree" required>
+            <label class="inter_18_bold" for="agree">Я согласен на обработку персональных данных</label>
+    </div>
+    
+    <div>
+        <button class="inter_18_bold" type="submit">Зарегистрироваться</button>
+    </div>
+</form>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

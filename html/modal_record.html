@@ -7,6 +7,7 @@
     <title>Вход</title>
     <link rel="stylesheet" href="../web/css/style.css">
     <link rel="icon" type="image/x-icon" href="../web/img/index/Логотип.svg">
+    <script src="../web/js/proof.js"></script>
 </head>
 
 <body>
@@ -31,37 +32,45 @@
 
 
     <div class="form-rec">
-        <div class="head-form-rec">
-            <label for="modal_record" class="close-btn">&times</label>
-            <h3>Запись</h3>
-            <form action="/test" method="get">
-                <div>
-                    <div class="field">
-                        <select>
-                            <option selected>Направление</option>
-                            <option value="option1">«ГРАВИТАЦИЯ»</option>
-                            <option value="option2">«ZB FITNESS»</option>
-                            <option value="option3">«DANCE MIX»</option>
-                            <option value="option4">«ФОРСАЖ»</option>
-                            <option value="option5">«СТАЛЬНЫЕ МЫШЦЫ»</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label for="password"></label>
-                        <input type="date" placeholder="Дата" name="date" id="date">
-                    </div>
-                    <div class="field">
-                        <label for="password"></label>
-                        <input type="time" placeholder="Время" name="time" id="time">
-                    </div>
+    <div class="head-form-rec">
+        <label for="modal_record" class="close-btn">&times</label>
+        <h3>Запись</h3>
+        <form id="recordForm" action="/test" method="get">
+            <div>
+                <div class="field">
+                    <select id="directionSelect" name="direction" required>
+                        <option value="">Направление</option>
+                        <option value="gravity">«ГРАВИТАЦИЯ»</option>
+                        <option value="zb_fitness">«ZB FITNESS»</option>
+                        <option value="dance_mix">«DANCE MIX»</option>
+                        <option value="forsage">«ФОРСАЖ»</option>
+                        <option value="steel_muscles">«СТАЛЬНЫЕ МЫШЦЫ»</option>
+                    </select>
                 </div>
+                <div class="field">
+                    <input type="date" placeholder="Дата" name="date" id="dateInput" required>
+                </div>
+                <div class="field">
+                    <input type="time" placeholder="Время" name="time" id="timeInput"required>
+                </div>
+            </div>
 
-                <div>
-                    <label for="modal_proof" class="proof-btn">Записаться</label>
-                </div>
-            </form>
+            <div>
+                <button type="submit" class="proof-btn" id="recordBtn">Записаться</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="success-overlay" id="successOverlay" style="display: none;">
+    <div class="success-modal">
+        <div class="success-content">
+            <h3>Запись успешна!</h3>
+            <p>Вы успешно записались на тренировку.</p>
+            <button class="success-btn" id="closeSuccessBtn">ОК</button>
         </div>
     </div>
+</div>
 </body>
 
 </html>
