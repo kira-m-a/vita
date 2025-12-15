@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Функционал фильтров
     const filterButtons = document.querySelectorAll('.filter-btn');
     
     filterButtons.forEach(button => {
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Кнопка сброса фильтров
     const resetFiltersBtn = document.getElementById('resetFilters');
     if (resetFiltersBtn) {
         resetFiltersBtn.addEventListener('click', function() {
